@@ -53,7 +53,7 @@ include 'koneksi.php';
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.php">
+                                    <a href="https://iik.ac.id/">
                                         <img src="img/p.png" alt="">
                                     </a>
                                 </div>

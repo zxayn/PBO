@@ -57,7 +57,7 @@ include 'koneksi.php';
 						<button name="login" class="login100-form-btn">
 							<i class="fa fa-sign-in"></i> Login
 						</button>
-                         <?php
+<?php
 if (isset($_POST ['login'])) {
 				$user = $_POST['user'];
 				$pass = $_POST['pass'];
@@ -82,17 +82,13 @@ if (isset($_POST ['login'])) {
 	}
 ?>
 					</div>
-                    <br/>
                     <center>Belum Punya Acount? Registrasi <a href="../registrasi.php" class="txt3">disini</a></center>
-                    <br>
-
 					<div>
-
+						
 						<center><a href="../index.php" class="txt3">
 							Kembali
 						</a></center>
 					</div>
-                   
 				</form>
 			</div>
 		</div>
