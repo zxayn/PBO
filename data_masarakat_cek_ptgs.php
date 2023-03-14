@@ -21,7 +21,7 @@ if(!isset ($_SESSION['nama_petugas'])){
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">

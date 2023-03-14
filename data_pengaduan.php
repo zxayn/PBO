@@ -21,7 +21,7 @@ if(!isset ($_SESSION['nama_petugas'])){
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -41,12 +41,12 @@ if(!isset ($_SESSION['nama_petugas'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                         
+                        
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
                                 <ul>
-                                   
+                                
                                 </ul>
                             </div>
                         </div>
@@ -73,20 +73,20 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
-                                     <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
                                     <?php }else{ ?>
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
-                                     <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
-                                     <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                                    <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
                                                 <ul class="submenu">
                                                     <li><a href="user_masarakat.php">Masyarakat</a></li>
                                                     <li><a href="user_admin.php">Admin Petugas</a></li>
                                                 </ul>
                                             </li>
-                                     <?php } ?>
+                                    <?php } ?>
 </ul>
                                     </nav>
                                 </div>
@@ -94,7 +94,7 @@ if ($level == 'petugas') {
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
-                                       
+                                    
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
                                         <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
@@ -120,7 +120,7 @@ if ($level == 'petugas') {
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-             <div class="slider_text ">
+                <div class="slider_text ">
                                 <h1 style="color:white">Admin/Petugas Web<br>
                                     Pengaduan Masyarakat</h1>
                                 <div class="video_service_btn">

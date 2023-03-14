@@ -56,7 +56,7 @@ if(!isset ($_SESSION['nama'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="../index.php">
-                                        <img src="../img/logo desa.png" alt="">
+                                        <img src="../img/logo sekolah.png" alt="">
                                     </a>
                                 </div>
                             </div>

@@ -20,7 +20,7 @@ if(!isset ($_SESSION['nama'])){
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
@@ -37,12 +37,12 @@ if(!isset ($_SESSION['nama'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                           
+                            
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
                                 <ul>
-                                   
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -64,15 +64,15 @@ if(!isset ($_SESSION['nama'])){
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="masarakat_admin.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="pengaduan1.php">Pengaduan Saya</a></li></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="masarakat_admin.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="pengaduan1.php">Pengaduan Saya</a></li></i>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
-                                       
+                                    
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
                                         <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
@@ -98,7 +98,7 @@ if(!isset ($_SESSION['nama'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-             <div class="slider_text ">
+            <div class="slider_text ">
                                 <h3 style="color:white"> Web Pelaporan<br>
                                     Pengaduan Masyarakat</h3>
                                 <p style="color:white">Selamat datang di web Pengaduan Masyarakat Desa Umbulan Kec. Cikeusik<br>
@@ -133,7 +133,7 @@ if(!isset ($_SESSION['nama'])){
             <th>Foto</th>
             <th colspan="2">Status</th>
 		</tr>
-         <?php
+        <?php
 $no =1;		 
 $nik = $_SESSION['nik'];
 $query = mysqli_query($conn,"SELECT * FROM pengaduan WHERE nik = '$nik'");
@@ -178,11 +178,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-  
     
-     
-
-   
+    
     <!-- form itself end -->
 
     <!-- JS here -->

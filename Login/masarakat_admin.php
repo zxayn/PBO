@@ -40,7 +40,7 @@ if(!isset ($_SESSION['nama'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                          
+                        
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
@@ -58,7 +58,7 @@ if(!isset ($_SESSION['nama'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="masarakat_admin.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/logo sekolah.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ if(!isset ($_SESSION['nama'])){
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
-                                       
+                                    
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
                                         <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
@@ -95,7 +95,7 @@ if(!isset ($_SESSION['nama'])){
     <!-- header-end -->
 
     <!-- slider_area_start -->
-      <div class="slider_area">
+    <div class="slider_area">
         <div class="slider_active owl-carousel">
             <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
                 <div class="container">
@@ -120,7 +120,7 @@ if(!isset ($_SESSION['nama'])){
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                               <h3> Web Pelaporan<br>
+                                <h3> Web Pelaporan<br>
                                     Pengaduan Masyarakat</h3>
                                 <p>Selamat datang di web Pengaduan Masyarakat Desa Umbulan Kec. Cikeusik<br>
                                     Silahkan adukan Keluh Kesah anda terhadap pemerintahan Desa Umbulan</p>
@@ -139,7 +139,7 @@ if(!isset ($_SESSION['nama'])){
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                              <h3> Web Pelaporan<br>
+                            <h3> Web Pelaporan<br>
                                     Pengaduan Masyarakat</h3>
                                 <p>Selamat datang di web Pengaduan Masyarakat Desa Umbulan Kec. Cikeusik<br>
                                     Silahkan adukan Keluh Kesah anda terhadap pemerintahan Desa Umbulan</p>
@@ -201,21 +201,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <div class="col-xl-12">
                                     <input type="email" placeholder="Password">
                                 </div>
-                               
+                                
                                 <div class="col-xl-12">
                                     <button type="submit" class="boxed-btn3">Login</button>
                                 </div>
                                 <div class="col-xl-12">
-                                </div>
                             </div>
+                        </div>
                 </div>
             </div>
         </div>
     </form>
     
-     
+    
 
-   
+    
     <!-- form itself end -->
 
     <!-- JS here -->

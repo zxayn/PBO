@@ -78,12 +78,14 @@ include 'koneksi.php';
 if (isset($_POST ['login'])) {
 				$user = $_POST['user'];
 				$pass = $_POST['pass'];
-				$data_user = mysqli_query ($conn,"SELECT * FROM petugas WHERE username ='$user' AND password ='$pass'");
-				$r = mysqli_fetch_array ($data_user);
-				$username = $r ['username'];
-				$password = $r ['password'];
-				$nama_user = $r ['nama_petugas'];
-				$nik = $r ['level'];
+				$data_user = mysqli_query($conn,"SELECT * FROM petugas WHERE username ='$user' AND password ='$pass'");
+                   
+				$r = mysqli_fetch_array($data_user);
+              
+				@$username = $r['username'];
+				@$password = $r['password'];
+				@$nama_user = $r['nama_petugas'];
+				@$nik = $r['level'];
 				if ($user == $username && $pass == $password) {
 					$_SESSION['nama_petugas'] = $nama_user;
 					$_SESSION['level'] = $nik;

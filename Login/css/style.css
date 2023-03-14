@@ -1266,12 +1266,12 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image:url(../img/banner/FB_IMG_1578574852361.jpg);
+  background-image:url(../../img/banner/cbk.jpeg);
 }
 
 /* line 4, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/banner/banner2.png);
+  background-image:url(../img/banner/banner2.png);
 }
 .slider_bg_3 {
   background-image:url(../img/banner/FB_IMG_1578574908152.jpg);
@@ -1513,7 +1513,7 @@ h3 {
 
 /* line 90, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
 .about_bg_1 {
-  background-image: url(../img/banner/about_bg.png);
+  background-image: url(../img/banner/1.png);
 }
 
 /* line 93, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
