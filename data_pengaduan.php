@@ -18,6 +18,7 @@ if(!isset ($_SESSION['nama_petugas'])){
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -60,7 +61,7 @@ if(!isset ($_SESSION['nama_petugas'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/p.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -123,10 +124,6 @@ if ($level == 'petugas') {
                 <div class="slider_text ">
                                 <h1 style="color:white">Admin/Petugas Web<br>
                                     Pengaduan Masyarakat</h1>
-                                <div class="video_service_btn">
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><i class="fa fa-user"></i> <?php echo $_SESSION['nama_petugas']?></a>
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><?php echo $_SESSION['level']?></a>
-                                </div>
                     </div>
                         </div>
                     </div>
@@ -146,7 +143,7 @@ if ($level == 'petugas') {
 <input type="submit" style="margin-top:10px" class="btn btn-outline-dark my-2 my-sm-0" style="padding:8px" name="cari" value="Cari Data" />
 </form>    
             <table class="table1" align="center" width="100%">
-		    <tr>
+		<tr>
 			<th>No</th>
 			<th>Tgl Pengaduan</th>
 			<th>Nama</th>
@@ -154,7 +151,7 @@ if ($level == 'petugas') {
             <th>Isi Laporan</th>
             <th>Foto</th>
             <th>Status</th>
-            <th><a class="btn btn-dark" style="float:left; width:70%" href="laporan_masarakat.php" role="button"><i class="fa fa-print"></i> Cetak</a> </th>
+            <th><a class="btn btn-dark" style="float:left; width:100%" href="laporan_masarakat.php" role="button"><i class="fa fa-print"></i>Cetak</a> </th>
 		</tr>
 <?php
 $batas =10;
@@ -194,11 +191,11 @@ while ($data = mysqli_fetch_array ($query)){
 <input type="hidden" name="foto" class="form_input2" value="<?php echo $data['foto']?>">
 <input type="hidden" name="status" class="form_input2" value="Selesai">
 <td>
-<button type="submit" class="btn btn-success" name="simpan">Selesai</button>
-<a onClick="return confirm('Yakin Ingin Menghapus?')" class="btn btn-danger" href="hapus_data.php?idd=<?php echo $data['id_pengaduan'] ?>" role="button"><i class="fa fa-remove"></i>Hapus</a>
+<button type="submit" class="btn btn-success" name="simpan"><i class="bi bi-check2"></i></button>
+<a onClick="return confirm('Yakin Ingin Menghapus?')" class="btn btn-danger" href="hapus_data.php?idd=<?php echo $data['id_pengaduan'] ?>" role="button"><i class="bi bi-trash3"></i></a>
 <div class="dropdown">
 <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" style="width:auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i></button>
-  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 		<a class="dropdown-item" href="tanggapan_adm.php?id=<?php echo $data['id_pengaduan'] ?>">Tanggapi</a>
         <a class="dropdown-item" href="tanggapan_adm_cek.php?id=<?php echo $data['isi_laporan'] ?>">Lihat Tanggapan</a>
 	</div>
@@ -241,7 +238,7 @@ while ($data = mysqli_fetch_array ($query)){
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | </i> by <a href="#" target="_blank">SMK TI PELITANUSANTARA</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -254,11 +251,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-  
-    
-     
 
-   
+    
+    
+
+
     <!-- form itself end -->
 
     <!-- JS here -->

@@ -67,21 +67,21 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
-                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat_ptgs.php">Data Masyarakat</a></li></i>
-                                    <?php }else{ ?>
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
-                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
-                                    <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
-                                                <ul class="submenu">
-                                                    <li><a href="user_masarakat.php">Masyarakat</a></li>
-                                                    <li><a href="user_admin.php">Admin</a></li>
-                                                </ul>
-                                            </li>
-                                    <?php } ?>
-</ul>
+                        <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                        <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
+                        <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat_ptgs.php">Data Masyarakat</a></li></i>
+                        <?php }else{ ?>
+                        <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                        <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                        <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                        <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
+                                    <ul class="submenu">
+                                        <li><a href="user_masarakat.php">Masyarakat</a></li>
+                                        <li><a href="user_admin.php">Admin</a></li>
+                                    </ul>
+                                </li>
+                            <?php } ?>
+                                    </ul>
                                     </nav>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ if ($level == 'petugas') {
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |</i> by <a href="" target="_blank">Kantor Desa Dermo</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |</i> by <a href="" target="_blank">SMK PELITANUSANTARA</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>

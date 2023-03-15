@@ -40,12 +40,12 @@ if(!isset ($_SESSION['nama_petugas'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                         
+                        
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
                                 <ul>
-                                   
+                                
                                 </ul>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ if(!isset ($_SESSION['nama_petugas'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/p.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -72,12 +72,12 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
                                     <?php }else{ ?>
                                     <li><a class="active" href="data_pengaduan.php">Kembali</a></li><i class="fa fa-sign-out" style="color:white"></i>
 
-                                     <?php } ?>
+                                    <?php } ?>
 </ul>
                                     </nav>
                                 </div>
@@ -85,7 +85,7 @@ if ($level == 'petugas') {
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
-                                       
+                                    
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
                                         <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
@@ -111,13 +111,9 @@ if ($level == 'petugas') {
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-             <div class="slider_text ">
+            <div class="slider_text ">
                                 <h1 style="color:white">Admin/Petugas Web<br>
                                     Pengaduan Masyarakat</h1>
-                                <div class="video_service_btn">
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><i class="fa fa-user"></i> <?php echo $_SESSION['nama_petugas']?></a>
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><?php echo $_SESSION['level']?></a>
-                                </div>
                     </div>
                         </div>
                     </div>
@@ -136,7 +132,6 @@ if ($level == 'petugas') {
     <br/>
             <table align="center">
             <form target="_blank" action="cetak_pengaduan.php" method="post">
-            <td><i class="fa fa-print" style="color:black;"></i></td>
             <td><input type="date" name="tgl1" class="form_input2" required></td>
             <td>s/d</td>
 			<td><input type="date" name="tgl2" class="form_input2" required></td>
@@ -158,7 +153,7 @@ if ($level == 'petugas') {
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by <a href="#" target="_blank">SMK TI PELITANUSANTARA</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -171,11 +166,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-  
-    
-     
 
-   
+    
+    
     <!-- form itself end -->
 
     <!-- JS here -->

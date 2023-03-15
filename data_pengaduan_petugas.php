@@ -21,7 +21,7 @@ if(!isset ($_SESSION['nama_petugas'])){
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -38,12 +38,12 @@ if(!isset ($_SESSION['nama_petugas'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                         
+                        
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
                                 <ul>
-                                   
+                                
                                 </ul>
                             </div>
                         </div>
@@ -70,21 +70,21 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
-                                     <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat_ptgs.php">Data Masyarakat</a></li></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat_ptgs.php">Data Masyarakat</a></li></i>
 
                                     <?php }else{ ?>
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
-                                     <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
-                                     <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                                    <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
                                                 <ul class="submenu">
                                                     <li><a href="user_masarakat.php">Masyarakat</a></li>
                                                     <li><a href="user_admin.php">Admin Petugas</a></li>
                                                 </ul>
                                             </li>
-                                     <?php } ?>
+                                    <?php } ?>
 </ul>
                                     </nav>
                                 </div>
@@ -92,7 +92,7 @@ if ($level == 'petugas') {
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
-                                       
+                                    
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
                                         <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
@@ -117,7 +117,7 @@ if ($level == 'petugas') {
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-             <div class="slider_text ">
+                <div class="slider_text ">
                                 <h1 style="color:white">Admin/Petugas Web<br>
                                     Pengaduan Masyarakat</h1>
                                 <div class="video_service_btn">
@@ -137,13 +137,13 @@ if ($level == 'petugas') {
 
 
     <!-- project  -->
-   <div class="project_area">
+    <div class="project_area">
 <form action="" method="post" class="tulisan_input2">
 <input type="text" name="cr" placeholder="Cari Data Pengaduan" style="width:20%; padding:8px; margin-top:5px; margin-bottom:5px" class="form_input" />
 <input type="submit" style="margin-top:10px" class="btn btn-outline-dark my-2 my-sm-0" style="padding:8px" name="cari" value="Cari Data" />
 </form>    
             <table class="table1" align="center" width="100%">
-		    <tr>
+		<tr>
 			<th>No</th>
 			<th>Tgl Pengaduan</th>
 			<th>Nama</th>
@@ -199,7 +199,7 @@ Hapus</a>
 <td width="10%">
 <div class="dropdown">
 <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" style="width:auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i></button>
-  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 		<a class="dropdown-item" href="tanggapan_ptgs.php?id=<?php echo $data['id_pengaduan'] ?>">Tanggapi</a>
         <a class="dropdown-item" href="tanggapan_ptgs_cek.php?id=<?php echo $data['isi_laporan'] ?>">Lihat Tanggapan</a>
 	</div>
@@ -246,7 +246,7 @@ Hapus</a>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">SMK TI PELITANUSANTARA</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>

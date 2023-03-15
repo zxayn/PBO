@@ -14,6 +14,7 @@ include 'koneksi.php';
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -74,14 +75,12 @@ include 'koneksi.php';
                                     </div>
                                     
                                 </div>
-                            <?php
+<?php
 if (isset($_POST ['login'])) {
 				$user = $_POST['user'];
 				$pass = $_POST['pass'];
 				$data_user = mysqli_query($conn,"SELECT * FROM petugas WHERE username ='$user' AND password ='$pass'");
-                   
 				$r = mysqli_fetch_array($data_user);
-              
 				@$username = $r['username'];
 				@$password = $r['password'];
 				@$nama_user = $r['nama_petugas'];
@@ -96,7 +95,7 @@ if (isset($_POST ['login'])) {
 		echo "<meta http-equiv='refresh' content='1;url=index.php'>";
 
 	}
-	}
+}
 ?>
                             </div>
                             <div class="col-12">
@@ -119,9 +118,9 @@ if (isset($_POST ['login'])) {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text">
-                                <h3> Web Pelaporan<br>
+                                <h3>Pelaporan<br>
                                     Pengaduan Masyarakat</h3>
-                                <p>Selamat datang di web Pengaduan Masyarakat Desa Umbulan<br>
+                                <p>Selamat datang di web Pengaduan Masyarakat Desa Dermo<br>
                                     Silahkan Registrasi dan Login dengan akun anda.</p>
                                 <div class="video_service_btn">
                                     <a href="registrasi.php" class="boxed-btn3"><i class="fa fa-user-plus"> Registrasi disini</i></a>
@@ -138,9 +137,9 @@ if (isset($_POST ['login'])) {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                                <h3> Web Pelaporan<br>
+                                <h3>Pelaporan<br>
                                     Pengaduan Masyarakat</h3>
-                                <p>Selamat datang di web Pengaduan Masyarakat Desa Umbulan<br>
+                                <p>Selamat datang di web Pengaduan Masyarakat Desa Dermo<br>
                                     Silahkan Registrasi dan Login dengan akun anda.</p>
                                 <div class="video_service_btn">
                                     <a href="registrasi.php" class="boxed-btn3"><i class="fa fa-user-plus"> Registrasi disini</i></a>
@@ -158,9 +157,9 @@ if (isset($_POST ['login'])) {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                            <h3> Web Pelaporan<br>
+                            <h3> Pelaporan<br>
                                     Pengaduan Masyarakat</h3>
-                                <p>Selamat datang di web Pengaduan Masyarakat Desa Umbulan<br>
+                                <p>Selamat datang di web Pengaduan Masyarakat Desa Dermo<br>
                                     Silahkan Registrasi dan Login dengan akun anda.</p>
                                 <div class="video_service_btn">
                                     <a href="registrasi.php" class="boxed-btn3"><i class="fa fa-user-plus"> Registrasi disini</i></a>
@@ -185,17 +184,13 @@ if (isset($_POST ['login'])) {
 
     <!-- footer start -->
     <footer class="footer">
-            
-        </div>
         <div class="copy-right_text">
             <div class="container">
                 <div class="footer_border"></div>
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |</i> by <a href="http://20540341.siap-sekolah.com/sekolah-profil/#.ZBFZi3bP23A" target="_blank">SMK TI PELITANUSANTARA</a>
                         </p>
                     </div>
                 </div>
