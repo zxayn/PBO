@@ -12,12 +12,13 @@ if(!isset ($_SESSION['nama_petugas'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>DATA PENGADUAN</title>
+    <title>Data Pengaduan</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Place favicon.ico in the root directory -->
 
@@ -26,7 +27,7 @@ if(!isset ($_SESSION['nama_petugas'])){
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Login/css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -54,14 +55,14 @@ if(!isset ($_SESSION['nama_petugas'])){
                     </div>
                 </div>
             </div>
-            <div id="sticky-header" class="main-header-area">
+            <div class="main-header-area">
                 <div class="container">
                     <div class="header_bottom_border">
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/p.png" alt="">
+                                        <img src="img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -74,21 +75,21 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
-                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
-                                    <?php }else{ ?>
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
-                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
-                                    <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
-                                                <ul class="submenu">
-                                                    <li><a href="user_masarakat.php">Masyarakat</a></li>
-                                                    <li><a href="user_admin.php">Admin Petugas</a></li>
-                                                </ul>
-                                            </li>
-                                    <?php } ?>
-</ul>
+                            <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                            <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
+                            <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                            <?php }else{ ?>
+                            <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                            <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                            <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                            <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
+                            <ul class="submenu">
+                                            <li><a href="user_masarakat.php">Masyarakat</a></li>
+                                            <li><a href="user_admin.php">Admin Petugas</a></li>
+                                        </ul>
+                                    </li>
+                            <?php } ?>
+                        </ul>
                                     </nav>
                                 </div>
                             </div>
@@ -115,22 +116,7 @@ if ($level == 'petugas') {
     <!-- header-end -->
 
     <!-- slider_area_start -->
-    <div class="slider_area2">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                <div class="slider_text ">
-                                <h1 style="color:white">Admin/Petugas Web<br>
-                                    Pengaduan Masyarakat</h1>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- slider_area_end -->
 
     <!-- service_area_start -->
@@ -228,24 +214,7 @@ while ($data = mysqli_fetch_array ($query)){
     <!--/ project  -->
 
     <!-- footer start -->
-    <footer class="footer">
-            
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | </i> by <a href="#" target="_blank">SMK TI PELITANUSANTARA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     <!--/ footer end  -->
 
     <!-- link that opens popup -->

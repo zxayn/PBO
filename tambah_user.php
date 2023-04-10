@@ -11,20 +11,21 @@ if(!isset ($_SESSION['nama_petugas'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TAMBAH USER</title>
+    <title>Tambah User</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Login/css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -40,12 +41,12 @@ if(!isset ($_SESSION['nama_petugas'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                         
+                        
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
                                 <ul>
-                                   
+                                
                                 </ul>
                             </div>
                         </div>
@@ -59,7 +60,7 @@ if(!isset ($_SESSION['nama_petugas'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -72,11 +73,11 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
                                     <?php }else{ ?>
-                                     <li><a class="active" href="user_admin.php">Kembali</a></li><i class="fa fa-sign-out" style="color:white"></i>
-                                     <?php } ?>
+                                    <li><a class="active" href="user_admin.php">Kembali</a></li><i class="fa fa-sign-out" style="color:white"></i>
+                                    <?php } ?>
 </ul>
                                     </nav>
                                 </div>
@@ -84,7 +85,7 @@ if ($level == 'petugas') {
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
-                                       
+                                    
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
                                         <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
@@ -92,7 +93,7 @@ if ($level == 'petugas') {
                                 </div>
                             </div>
                             <div class="col-12">
-                             <?php
+                            <?php
 if (isset($_POST['simpan'])){
 	$id = $_POST ['id'];
 	$nama = $_POST ['nama'];
@@ -122,26 +123,6 @@ if (isset($_POST['simpan'])){
     <!-- header-end -->
 
     <!-- slider_area_start -->
-    <div class="slider_area2">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-             <div class="slider_text ">
-                                <h1 style="color:white">Admin/Petugas Web<br>
-                                    Pengaduan Masyarakat</h1>
-                                <div class="video_service_btn">
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><i class="fa fa-user"></i> <?php echo $_SESSION['nama_petugas']?></a>
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><?php echo $_SESSION['level']?></a>
-                                </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- slider_area_end -->
 
@@ -150,7 +131,7 @@ if (isset($_POST['simpan'])){
 
     <!-- project  -->
     <div class="project_area">
-    <p class="tulisan_input2">Tambah User Admin/petugas</p>
+    <p class="tulisan_input2">Tambah User Admin/Petugas</p>
     <table class="table2" width="40%" align="center">
 <form method="post">
 <td><input type="hidden" name="id"></td>
@@ -184,34 +165,17 @@ if (isset($_POST['simpan'])){
     <!--/ project  -->
 
     <!-- footer start -->
-    <footer class="footer">
-            
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     <!--/ footer end  -->
 
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-  
-    
-     
 
-   
+    
+    
+
+
     <!-- form itself end -->
 
     <!-- JS here -->

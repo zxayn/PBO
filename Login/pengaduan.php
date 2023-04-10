@@ -11,12 +11,13 @@ if(!isset ($_SESSION['nama'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>HOME</title>
+    <title>Pengaduan Masyarakat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -24,7 +25,7 @@ if(!isset ($_SESSION['nama'])){
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Login/css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -54,8 +55,7 @@ if(!isset ($_SESSION['nama'])){
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="masarakat_admin.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -86,22 +86,48 @@ if(!isset ($_SESSION['nama'])){
 if (isset($_POST['simpan'])){
 	$id = $_POST ['id'];
 	$tgl = $_POST ['tgl'];
+    $ekstensi_diperbolehkan	= array('png','jpg', 'jpeg');
+    $ekstensi = strtolower(end($x));
 	$nama = $_POST ['nama'];
 	$nik = $_POST ['nik'];
 	$laporan = $_POST ['laporan'];
 	$tlp = $_POST ['tlp'];
-	$gambar = $_POST ['gambar'];
+    $x = explode('.', $nama);
+	$gambar = $_FILES ['gambar'];
+    $file_tmp = $_FILES['file']['tmp_name'];
 	$st = $_POST ['st'];
 	$tambah = mysqli_query ($conn, "INSERT INTO pengaduan(id_pengaduan,tgl_pengaduan,nama_pengadu,nik,isi_laporan,tlp,foto,status)VALUES('$id','$tgl','$nama','$nik','$laporan','$tlp','$gambar','$st')");
 	if($tambah){
-		echo "<div class='alert alert-success'><center>Pengaduan Berhasil</center></div>";
 		echo "<meta http-equiv='refresh' content='1;url=pengaduan1.php'>";
 		} else {
-		echo "<div class='alert alert-danger'><center>Pengaduan Gagal</center></div>";
 		echo "<meta http-equiv='refresh' content='1;url=pengaduan.php'>";
 		}
-		}
+	}
 ?>
+<!-- if($_POST['upload']){
+	$ekstensi_diperbolehkan	= array('png','jpg');
+	$nama = $_FILES['file']['name'];
+	$x = explode('.', $nama);
+	$ekstensi = strtolower(end($x));
+	$ukuran	= $_FILES['file']['size'];
+	$file_tmp = $_FILES['file']['tmp_name'];	
+		if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
+		if($ukuran < 1044070){			
+			move_uploaded_file($file_tmp, 'file/'.$nama);
+			$query = mysql_query("INSERT INTO upload VALUES(NULL, '$nama')");
+			if($query){
+				echo 'FILE BERHASIL DI UPLOAD';
+			}else{
+				echo 'GAGAL MENGUPLOAD GAMBAR';
+			}
+		}else{
+			echo 'UKURAN FILE TERLALU BESAR';
+		}
+	}else{
+		echo 'EKSTENSI FILE YANG DI UPLOAD TIDAK DI PERBOLEHKAN';
+	}
+}
+?> -->
                                 <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
                         </div>
@@ -114,28 +140,7 @@ if (isset($_POST['simpan'])){
     <!-- header-end -->
 
     <!-- slider_area_start -->
-    <div class="slider_area2">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text ">
-                                <h3 style="color:white"> Web Pelaporan<br>
-                                    Pengaduan Masyarakat</h3>
-                                <p style="color:white">Selamat datang di web Pengaduan Masyarakat Desa Umbulan Kec. Cikeusik<br>
-                                    Silahkan adukan Keluh Kesah anda terhadap pemerintahan Desa Umbulan</p>
-                                <div class="video_service_btn">
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase; font-size:15px"><i class="fa fa-user"> <?php echo $_SESSION['nama']?></i></a>
-                                    <a href="pengaduan.php" class="boxed-btn3">Pengaduan disini</a>
-                                    </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- slider_area_end -->
 
     <!-- service_area_start -->
@@ -147,52 +152,35 @@ if (isset($_POST['simpan'])){
     <table class="table2" width="40%" align="center">
 <form method="post">
 <input type="hidden" name="id" class="form_input2">
-<td><h7>TANGGAL PENGADUAN</h7></td><td><input type="text" name="tgl" class="form_input2" required value="<?php date_default_timezone_set('Asia/Jakarta'); echo date('Y-m-d (H:i:s)') ?>" readonly></td>
+<td><h7>Tanggal Pengaduan</h7></td><td><input type="text" name="tgl" class="form_input2" required value="<?php date_default_timezone_set('Asia/Jakarta'); echo date('Y-m-d (H:i:s)') ?>" readonly></td>
 </tr>
 <tr>
-<td><h7>NAMA</h7></td><td><input type="text" name="nama" class="form_input2" required value="<?php echo $_SESSION['nama']?>" readonly></td>
+<td><h7>Nama</h7></td><td><input type="text" name="nama" class="form_input2" required value="<?php echo $_SESSION['nama']?>" readonly></td>
 </tr>
 <tr>
 <td><h7>NIK</h7></th><td><input type="text" name="nik" class="form_input2" required value="<?php echo $_SESSION['nik']?>" readonly></td>
 </tr>
 <tr>
-<td><h7>ISI LAPORAN</h7></th><td><textarea name="laporan" cols="90" required rows="8"></textarea></td>
+<td><h7>Isi Laporan</h7></th><td><textarea name="laporan" cols="90" required rows="8"></textarea></td>
 </tr>
 <tr>
-<td><h7>NO TELEPON</h7></th><td><input type="text" name="tlp" required class="form_input2" value="<?php echo $_SESSION['tlp']?>" readonly></td>
+<td><h7>No.Telp</h7></th><td><input type="text" name="tlp" required class="form_input2" value="<?php echo $_SESSION['tlp']?>" readonly></td>
 </tr>
 <tr>
-<td><h7>FOTO</h7></th><td><input type="file" required name="gambar"></td>
+<td><h7>Foto</h7></th><td><input type="file" required name="gambar"></td>
 </tr>
 <tr>
 <td><input type="hidden" name="st" value="Proses"></td>
 </tr>
 <tr>
 <td colspan="2"><button type="submit" class="btn btn-success" name="simpan" style="float:left; margin-right:25px;">Adukan</button>
-                <button type="reset" class="btn btn-danger" style="float:left; margin-right:25px;"><i class="fa fa-remove"></i> Reset</button>
+            5<button type="reset" class="btn btn-danger" style="float:left; margin-right:25px;"><i class="fa fa-remove"></i> Reset</button>
 </td>
 </tr>
 
 <form>
 </table>
-    </div>
-    <footer class="footer">   
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     <!--/ footer end  -->
 
     <!-- link that opens popup -->

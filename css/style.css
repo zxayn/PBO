@@ -25,6 +25,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow: hidden;
 }
 
 /* line 12, ../../Arafath/CL/CL October/213. Business/HTML/scss/theme-default.scss */
@@ -962,7 +963,7 @@ h3 {
 
 /* line 108, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a {
-  background: #28AE60;
+  background: rgb(134, 107, 67);
   padding: 12px 26px;
   font-size: 14px;
   font-weight: 400;
@@ -982,9 +983,9 @@ h3 {
 
 /* line 119, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a:hover {
-  background: #28AE60;
+  background: bisque;
   color: #fff;
-  border: 1px solid #28AE60;
+  border: 1px solid rgb(134, 107, 67);
 }
 
 /* line 127, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
@@ -1060,7 +1061,7 @@ h3 {
 
 /* line 191, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #28AE60;
+  color: rgb(255, 184, 79);
 }
 
 /* line 195, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
@@ -1169,7 +1170,6 @@ h3 {
 /* line 279, ../../Arafath/CL/CL October/213. Business/HTML/scss/_header.scss */
 .header-area .header-top_area {
   padding: 12px 0;
-  background: rgba(44, 44, 44, 0.5);
 }
 
 @media (max-width: 767px) {
@@ -1266,14 +1266,14 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image:url(../img/banner/p.jpeg);
+  background-image:url(../img/banner/da.webp);
 }
 /* line 4, ../../Arafath/CL/CL October/213. Business/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image:url(../img/banner/cbk.jpeg);
+  background-image:url(../img/banner/aw.jpg);
 }
 .slider_bg_3 {
-  background-image:url(../img/banner/ppp.jpeg);
+  background-image:url(../img/banner/pexels-photo-1509428.jpeg);
 }
 
 
@@ -6931,7 +6931,7 @@ h6 {
 	width:100%;
 	padding-top:15px;
 	padding-bottom:17px;
-	background-color:#28AE60;
+	background-color:rgb(203, 172, 125);
 	font-size:20pt;
 	font-family:"Arial Black", Gadget, sans-serif;
 	text-align: center;
@@ -6946,13 +6946,13 @@ h6 {
 	margin:  auto;
 	padding: 40px 10px;
 }
- 
+
 label{
 	font-size: 15pt;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	color:#03C;
 }
- 
+
 .form_input{
 	/*membuat lebar form penuh*/
 	box-sizing : border-box;
@@ -6978,7 +6978,7 @@ label{
 	margin-bottom:0px;
 	font-size:20px;
 }
- 
+
 .tombol_simpan{
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	background:#28AE60;
@@ -7012,22 +7012,22 @@ label{
     width: 100%;
     border: 1px solid #f2f5f7;
 }
- 
+
 .table1 tr th{
     background:#28AE60;
     color: #fff;
     font-weight: normal;
 }
- 
+
 .table1, th, td {
     padding: 8px 20px;
     text-align: center;
 }
- 
+
 .table1 tr:hover {
     background-color: #f5f5f5;
 }
- 
+
 .table1 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -7043,24 +7043,24 @@ label{
     width: 100%;
     border: 1px solid #f2f5f7;
 }
- 
+
 .table2 tr th{
 	text-align:left;
     background:#006;
     color: #fff;
     font-weight: normal;
 }
- 
+
 .table2, th, td {
 	text-align:left;
     padding: 8px 20px;
 }
- 
+
 .table2 tr:hover {
 	text-align:left;
     background-color: #f5f5f5;
 }
- 
+
 .table2 tr:nth-child(even) {
 	text-align:right;
     background-color: #f2f2f2;

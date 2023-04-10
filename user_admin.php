@@ -11,20 +11,21 @@ if(!isset ($_SESSION['nama_petugas'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>USER ADMIN</title>
+    <title>User Admin | Petugas</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Login/css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -59,7 +60,7 @@ if(!isset ($_SESSION['nama_petugas'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -112,26 +113,7 @@ if ($level == 'petugas') {
     <!-- header-end -->
 
     <!-- slider_area_start -->
-    <div class="slider_area2">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-            <div class="slider_text ">
-                                <h1 style="color:white">Admin/Petugas Web<br>
-                                    Pengaduan Masyarakat</h1>
-                                <div class="video_service_btn">
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><i class="fa fa-user"></i> <?php echo $_SESSION['nama_petugas']?></a>
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><?php echo $_SESSION['level']?></a>
-                                </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- slider_area_end -->
 
     <!-- service_area_start -->
@@ -139,16 +121,14 @@ if ($level == 'petugas') {
 
     <!-- project  -->
     <div class="project_area">
-    <p class="tulisan_input2">User admin/petugas</p>
+    <p class="tulisan_input2">User Admin/Petugas</p>
     <table class="table1" align="center" width="100%">
 		<tr>
 			<th>No</th>
 			<th>Nama</th>
-			<th>Username</th>
-			<th>Password</th>
             <th>No Telepon</th>
             <th>Level</th>
-            <th><a class="btn btn-dark" style="float:left; width:58%" href="tambah_user.php" role="button"><i class="fa fa-user-plus"></i> Tambah User</a> </th>
+            <th><a class="btn btn-dark" style="float:left; width:45%" href="tambah_user.php" role="button"><i class="fa fa-user-plus"></i> Tambah User</a> </th>
 		</tr>
 <?php
 $no = 1;
@@ -159,8 +139,6 @@ while ($data = mysqli_fetch_array ($query)){
 <tr>
 <td><?php echo $no++ ?></td>
 <td><?php echo $data['nama_petugas'] ?></td>
-<td><?php echo $data['username'] ?></td>
-<td><?php echo $data['password'] ?></td>
 <td><?php echo $data['tlp'] ?></td>
 <td><?php echo $data['level'] ?></td>
 <td>
@@ -177,24 +155,7 @@ while ($data = mysqli_fetch_array ($query)){
     <!--/ project  -->
 
     <!-- footer start -->
-    <footer class="footer">
-            
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     <!--/ footer end  -->
 
     <!-- link that opens popup -->

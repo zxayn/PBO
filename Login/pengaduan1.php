@@ -11,12 +11,13 @@ if(!isset ($_SESSION['nama'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>HOME</title>
+    <title>Pengaduan Saya</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -24,7 +25,7 @@ if(!isset ($_SESSION['nama'])){
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Login/css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -55,18 +56,12 @@ if(!isset ($_SESSION['nama'])){
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="../index.php">
-                                        <img src="../img/logo desa.png" alt="">
+                                        <img src="../img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-7">
                                 <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="masarakat_admin.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="pengaduan1.php">Pengaduan Saya</a></li></i>
-                                    </nav>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
@@ -75,7 +70,7 @@ if(!isset ($_SESSION['nama'])){
                                     
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
-                                        <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
+                                        <a href="masarakat_admin.php#">Kembali <i class="fa fa-sign-out"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -92,28 +87,7 @@ if(!isset ($_SESSION['nama'])){
     <!-- header-end -->
 
     <!-- slider_area_start -->
-    <div class="slider_area2">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-            <div class="slider_text ">
-                                <h3 style="color:white"> Web Pelaporan<br>
-                                    Pengaduan Masyarakat</h3>
-                                <p style="color:white">Selamat datang di web Pengaduan Masyarakat Desa Umbulan Kec. Cikeusik<br>
-                                    Silahkan adukan Keluh Kesah anda terhadap pemerintahan Desa Umbulan</p>
-                                <div class="video_service_btn">
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase; font-size:15px"><i class="fa fa-user"> <?php echo $_SESSION['nama']?></i></a>
-                                    <a href="pengaduan.php" class="boxed-btn3">Pengaduan disini</a>
-                                    </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- slider_area_end -->
 
     <!-- service_area_start -->
@@ -147,32 +121,21 @@ while ($data = mysqli_fetch_array ($query)){
 <td><?=$data ['nik'] ?></td>
 <td><?=$data ['isi_laporan'] ?></td>
 <td><?=$data ['tlp'] ?></td>
-<td><a href="#/image/<?= $data['foto'];?>"><img src="image/<?= $data['foto']?>" height="55px"></a></td>
+<td><a href="image/x<?= $data['foto'];?>"><img src="image/<?= $data['foto']?>" height="55px"></a></td>
 <td><?=$data ['status'] ?></td>
 <td><a class="btn btn-success" style="float:left" href="tanggapan_masyarakat.php?id=<?php echo $data['isi_laporan'] ?>" role="button"><i class="fa fa-eye"></i> Lihat Tanggapan</a></p>
-<?php }}else{
+<?php }
+    }else{
 	echo '<tr><td colspan="8" align="center">TIDAK ADA DATA!!!</td></tr>';
 }?>
 </table>
-    </div>
-    <footer class="footer">
-            
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- $ekstensi_diperbolehkan	= array('png','jpg');
+$nama = $_FILES['file']['name'];
+$x = explode('.', $nama);
+$ekstensi = strtolower(end($x));
+$ukuran	= $_FILES['file']['size'];
+$file_tmp = $_FILES['file']['tmp_name']; -->
+
     <!--/ footer end  -->
 
     <!-- link that opens popup -->

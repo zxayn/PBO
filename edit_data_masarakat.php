@@ -14,12 +14,13 @@ if(!isset ($_SESSION['nama_petugas'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>EDIT DATA MASYARAKAT</title>
+    <title>Edit Data Masyarakat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -27,7 +28,7 @@ if(!isset ($_SESSION['nama_petugas'])){
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Login/css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -58,7 +59,7 @@ if(!isset ($_SESSION['nama_petugas'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -129,26 +130,6 @@ if (isset($_POST['simpan'])){
     <!-- header-end -->
 
     <!-- slider_area_start -->
-    <div class="slider_area2">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-            <div class="slider_text ">
-                                <h1 style="color:white">Admin/Petugas Web<br>
-                                    Pengaduan Masyarakat</h1>
-                                <div class="video_service_btn">
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><i class="fa fa-user"></i> <?php echo $_SESSION['nama_petugas']?></a>
-                                    <a href="#" class="boxed-btn3" style="text-transform: uppercase;"><?php echo $_SESSION['level']?></a>
-                                </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- slider_area_end -->
 
@@ -157,7 +138,7 @@ if (isset($_POST['simpan'])){
 
     <!-- project  -->
     <div class="project_area">
-    <p class="tulisan_input2">edit data masyarakat</p>
+    <p class="tulisan_input2">Edit Data Masyarakat</p>
     <table class="table2" width="40%" align="center">
 <form method="post">
 <td><input type="hidden" name="id" value="<?php echo $data['id_masarakat']?>"></td>
@@ -175,8 +156,8 @@ if (isset($_POST['simpan'])){
 <td><h7>RT/RW</h7></th><td><input type="text" name="rt" class="form_input2" required  value="<?php echo $data['rt_rw']?>"></td>
 </tr>
 <tr>
-<td colspan="2"><button type="submit" class="btn btn-success" name="simpan" style="float:left; margin-right:25px;">Edit disini</button>
-                <a class="btn btn-dark" href="data_masarakat.php" role="button" style="float:right">Kembali <i class="fa fa-sign-out" style="color:white"></i></a>
+<td colspan="2"><button type="submit" class="btn btn-success" name="simpan" style="float:left; margin-right:25px;">Selesai</button>
+                <a class="btn btn-dark" href="data_masarakat.php" role="button" style="float:right">Kembali</a>
 
 </td>
 </tr>
@@ -187,24 +168,7 @@ if (isset($_POST['simpan'])){
     <!--/ project  -->
 
     <!-- footer start -->
-    <footer class="footer">
-            
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">DESA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
     <!--/ footer end  -->
 
     <!-- link that opens popup -->

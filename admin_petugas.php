@@ -17,6 +17,7 @@ if(!isset ($_SESSION['level'])){
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -29,6 +30,19 @@ if(!isset ($_SESSION['level'])){
 </head>
 
 <body>
+<!-- <div class="video-container">
+    <video src="vidhome.webm" autoplay="" muted="" loop="" playsinline="" preload="auto" poster="./assets/img/video_preload.jpg"></video>
+    <div class="video-blur"></div>
+    <div class="video-text">
+    <h1>Selamat Datang di IIK BHAKTA,<br>Kampusnya para Juara!</h1>
+    <p>
+    IIK Bhakta, kampus dengan penghargaan institut swasta ke 2 se-Jawa Timur
+    versi LLDIKTI7 &amp; satu-satunya institut raih SNI Award dari 4.468 kampus di
+    Indonesia ini siap jadi tempat wujudkan suksesmu.
+    </p>
+    <h2>IIK BHAKTA, untuk masa depan yang pasti</h2>
+</div>
+</div> -->
     <!-- header-start -->
     <header>
         <div class="header-area ">
@@ -54,7 +68,7 @@ if(!isset ($_SESSION['level'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/p.png" alt="">
+                                        <img src="img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -173,11 +187,7 @@ if ($level == 'petugas') {
                 <div class="footer_border"></div>
                 <div class="row">
                     <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |</i> by <a href="" target="_blank">SMK PELITANUSANTARA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
+                        <
                     </div>
                 </div>
             </div>

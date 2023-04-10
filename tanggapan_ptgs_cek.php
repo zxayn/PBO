@@ -23,7 +23,7 @@ if(!isset ($_SESSION['nama_petugas'])){
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -43,12 +43,12 @@ if(!isset ($_SESSION['nama_petugas'])){
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 col-md-6 ">
-                         
+                        
                         </div>
                         <div class="col-xl-6 col-md-6">
                             <div class="short_contact_list">
                                 <ul>
-                                   
+                                
                                 </ul>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ if(!isset ($_SESSION['nama_petugas'])){
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="admin_petugas.php">
-                                        <img src="img/logo desa.png" alt="">
+                                        <img src="img/iik.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -75,20 +75,20 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
-                                     <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
                                     <?php }else{ ?>
-                                     <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                     <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
-                                     <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
-                                     <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
+                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                                    <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
                                                 <ul class="submenu">
                                                     <li><a href="user_masarakat.php">Masyarakat</a></li>
                                                     <li><a href="user_admin.php">Admin Petugas</a></li>
                                                 </ul>
                                             </li>
-                                     <?php } ?>
+                                    <?php } ?>
 </ul>
                                     </nav>
                                 </div>
@@ -96,7 +96,7 @@ if ($level == 'petugas') {
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
-                                       
+                                    
                                     </div>
                                     <div class="book_btn d-none d-lg-block">
                                         <a href="logout.php" onclick="return confirm('Yakin Ingin Logout?')">Logout <i class="fa fa-sign-out"></i></a>
@@ -122,7 +122,7 @@ if ($level == 'petugas') {
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
-             <div class="slider_text ">
+                            <div class="slider_text ">
                                 <h1 style="color:white">Admin/Petugas Web<br>
                                     Pengaduan Masyarakat</h1>
                                 <div class="video_service_btn">
@@ -143,7 +143,7 @@ if ($level == 'petugas') {
 
     <!-- project  -->
     <div class="project_area">
-    <p class="tulisan_input2">TANGGAPAN LAPORAN MASYARAKAT</p>
+    <p class="tulisan_input2">Tanggapan Laporan Masyarakat</p>
 <form method="post">
 
 <center><h4 style="margin-top:20px">Ditanggapi Tanggal: <?= $data ['tgl_tanggapan']?></h4></center>
@@ -183,11 +183,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-  
-    
-     
 
-   
+    
+    
+
+
     <!-- form itself end -->
 
     <!-- JS here -->

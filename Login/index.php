@@ -9,7 +9,7 @@ include 'koneksi.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -25,8 +25,10 @@ include 'koneksi.php';
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
+	<link rel="icon" type="image/x-icon" href="../icon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 <!--===============================================================================================-->
 </head>
 <body>
@@ -63,11 +65,11 @@ if (isset($_POST ['login'])) {
 				$pass = $_POST['pass'];
 				$data_user = mysqli_query ($conn,"SELECT * FROM masyarakat WHERE username ='$user' AND password ='$pass'");
 				$r = mysqli_fetch_array ($data_user);
-				$username = $r ['username'];
-				$password = $r ['password'];
-				$nama_user = $r ['nama'];
-				$nik = $r ['nik'];
-				$tlp = $r ['tlp'];
+				@$username = $r ['username'];
+				@$password = $r ['password'];
+				@$nama_user = $r ['nama'];
+				@$nik = $r ['nik'];
+				@$tlp = $r ['tlp'];
 				if ($user == $username && $pass == $password) {
 					$_SESSION['nama'] = $nama_user;
 					$_SESSION['nik'] = $nik;
@@ -82,7 +84,7 @@ if (isset($_POST ['login'])) {
 	}
 ?>
 					</div>
-                    <center>Belum Punya Acount? Registrasi <a href="../registrasi.php" class="txt3">disini</a></center>
+              <center>Belum Punya Account? Registrasi <a href="../registrasi.php" class="txt3">disini!!</a></center>
 					<div>
 						
 						<center><a href="../index.php" class="txt3">

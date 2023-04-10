@@ -11,6 +11,7 @@ if(!isset ($_SESSION['level'])){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="icon" type="image/x-icon" href="icon.ico" />
 </head>
 
 <body>
@@ -24,8 +25,8 @@ if(!isset ($_SESSION['level'])){
 <div class="head">
 <table>
 <tr>
-<td width="10%"><img src="img/LOGO KABUPATEN PANDEGLANG.png" width="80px" /></td>
-<td align="center" width="90%"><font style="font-size:22px; font-family:Arial, Helvetica, sans-serif;">PEMERINTAH KABUPATEN PANDEGLANG<br />KECAMATAN CIKEUSIK<br/>DESA UMBULAN</font><br /><i><font style="font-size:15px;">Jl. Raya Cikeusik- Binuangeun Km. 05 Umbulan-Cikeusik-Pandeglang 42286</font></i></td>
+<td width="15%"><img src="img/asd.png" width="90px" /></td>
+<td align="center" width="90%"><font style="font-size:22px; font-family:Arial, Helvetica, sans-serif;">PEMERINTAH KOTA KEDIRI<br />KECAMATAN MOJOROTO<br/>DESA DERMO</font><br /><i><font style="font-size:15px;">Jl. Gunung Agung- Kediri Km. 02 Mrican-Mojoroto-Kediri 33201</font></i></td>
 </tr>
 </table>
 </div><br /><br />
@@ -61,10 +62,10 @@ while ($data = mysqli_fetch_array ($query)) {
 <br/>
 <table class="titik">
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Umbulan,.........................<script>document.write(new Date().getFullYear());</script></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dermo,.........................<script>document.write(new Date().getFullYear());</script></td>
 </tr>
 <tr>
-<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEPALA DESA UMBULAN</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEPALA DESA DERMO</td>
 </tr>
 </table>
 <br/><br/><br/><br/>
