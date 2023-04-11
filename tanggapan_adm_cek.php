@@ -7,7 +7,7 @@ $data = mysqli_fetch_array ($p);
 if(!isset ($_SESSION['nama_petugas'])){
 	header ("location: index.php");
 }elseif ($data==0) {
-    header ("location: Login/tanggapankosong.php");
+    header ("location: login/tanggapankosong.php");
     
 	}else{
 ?>
@@ -138,6 +138,7 @@ if ($level == 'petugas') {
 <center><a class="btn btn-dark" href="data_pengaduan.php" style="width:30%;">Kembali</a></p></center>
 </div>
 </form>
+
 
 </div>
     <!--/ project  -->
