@@ -18,8 +18,8 @@ if (!isset ($_SESSION['nama'])) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <link rel="icon" type="image/x-icon" href="../icon.ico"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-              crossorigin="anonymous">
+                integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+                crossorigin="anonymous">
 
     </head>
     <body class="is-preload">
@@ -61,25 +61,25 @@ if (!isset ($_SESSION['nama'])) {
                         <div class="row">
                             <div class="col-8 col-12-medium">
                                 <input type="text" name="tgl" class="form_input2" required
-                                       value="<?php date_default_timezone_set('Asia/Jakarta');
-                                       echo date('Y-m-d (H:i:s)') ?>" readonly></div>
+                                        value="<?php date_default_timezone_set('Asia/Jakarta');
+                                        echo date('Y-m-d (H:i:s)') ?>" readonly></div>
                             <div class="col-8 col-12-medium">
                                 <input type="text" name="nama" class="form_input2" required
-                                       value="<?php echo $_SESSION['nama'] ?>" readonly></div>
+                                        value="<?php echo $_SESSION['nama'] ?>" readonly></div>
                             <div class="col-8 col-12-medium">
                                 <input type="text" name="tlp" required class="form_input2"
-                                       value="<?php echo $_SESSION['tlp'] ?>" readonly></div>
+                                        value="<?php echo $_SESSION['tlp'] ?>" readonly></div>
                             <div class="col-8 col-12-medium">
                                 <input type="text" name="nik" class="form_input2" required
-                                       value="<?php echo $_SESSION['nik'] ?>" readonly></div>
+                                        value="<?php echo $_SESSION['nik'] ?>" readonly></div>
                             <div class="col-8">
                                 <input type="file" required name="gambar"></div>
                             <input type="hidden" name="st" value="Proses">
                             <div class="col-12">
                                 <textarea name="laporan" cols="90" placeholder="Kirimkan Masukan" required
-                                          rows="8"></textarea></div>
+                                            rows="8"></textarea></div>
                             <div class="col-xl-3">
-                                <input type="submit" value="Kirim Masukan" name="simpan"<a href="pengaduan1.php">
+                                <input type="submit" value="Kirim Masukan" name="simpan"
                             </div>
                         </div>
                     </div>
@@ -92,8 +92,7 @@ if (!isset ($_SESSION['nama'])) {
         <div id="footer">
             <ul class="copyright">
                 Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                All rights reserved |</i> by <a href="http://20540341.siap-sekolah.com/sekolah-profil/#.ZBFZi3bP23A"
-                                                target="_blank">SMK TI PELITANUSANTARA</a>
+                All rights reserved |</i> by <a href="http://20540341.siap-sekolah.com/sekolah-profil/#.ZBFZi3bP23A"target="_blank">SMK TI PELITANUSANTARA</a>
             </ul>
         </div>
 

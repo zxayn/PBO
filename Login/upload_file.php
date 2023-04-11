@@ -1,9 +1,9 @@
 <?php
 include "koneksi.php";
+error_reporting(-1);
 
 if (isset($_POST['simpan'])) {
     //Get value dari form
-    $id = $_POST ['id'];
     $tgl = $_POST ['tgl'];
     $nama = $_POST ['nama'];
     $nik = $_POST ['nik'];
@@ -15,12 +15,12 @@ if (isset($_POST['simpan'])) {
     $filename = $_FILES['gambar']['name'];
     $temp = explode('.', $filename);
     $ekstensi = strtolower(end($temp));
-    $ukuran = $_FILES['file']['size'];
-    $file_tmp = $_FILES['file']['tmp_name'];
+    $ukuran = $_FILES['gambar']['size'];
+    $file_tmp = $_FILES['gambar']['tmp_name'];
 
     //Konfigurasi upload
     $path = "gambar_pengaduan/";
-    $ekstensi_diperbolehkan = array('png', 'jpg'); //Memastikan hanya gambar yang diupload
+    $ekstensi_diperbolehkan = array('png', 'jpg', 'jpeg'); //Memastikan hanya gambar yang diupload
     $max_ukuran_file = 1044070; //Default server allowed is 1MB
 
     if (in_array($ekstensi, $ekstensi_diperbolehkan) === true) {

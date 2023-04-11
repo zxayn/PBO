@@ -6,6 +6,9 @@ $p = mysqli_query ($conn, "SELECT * FROM tanggapan WHERE isi_laporan = '$idd'");
 $data = mysqli_fetch_array ($p);
 if(!isset ($_SESSION['nama_petugas'])){
 	header ("location: index.php");
+}elseif ($data==0) {
+    header ("location: Login/tanggapankosong.php");
+    
 	}else{
 ?>
 <!doctype html>

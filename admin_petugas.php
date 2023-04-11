@@ -11,7 +11,7 @@ if(!isset ($_SESSION['level'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Admin | Petugas</title>
+    <title><?php echo $_SESSION['nama_petugas'] ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -129,8 +129,7 @@ if ($level == 'petugas') {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                                <h3>Admin<br>
-                                    Pengaduan Masyarakat</h3>
+                                <h3>Hello <?php echo $_SESSION['level'] ?> <?php echo $_SESSION['nama_petugas'] ?></h3>
                                 <div class="video_service_btn">
                                 </div>
                             </div>
@@ -143,8 +142,7 @@ if ($level == 'petugas') {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                                <h3>Admin<br>
-                                    Pengaduan Masyarakat</h3>
+                                <h3>Hello <?php echo $_SESSION['level'] ?> <?php echo $_SESSION['nama_petugas'] ?></h3>
                                 <div class="video_service_btn">
                                 </div>
 
@@ -158,8 +156,7 @@ if ($level == 'petugas') {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text ">
-                            <h3>Admin<br>
-                                Pengaduan Masyarakat</h3>
+                            <h3>Hello <?php echo $_SESSION['level'] ?> <?php echo $_SESSION['nama_petugas'] ?></h3>
                                 <div class="video_service_btn">
                                 </div>
                             </div>

@@ -143,10 +143,10 @@ if (isset($_POST['simpan'])){
 <td><h7>USERNAME</h7></th><td><input type="text" name="user" class="form_input2" required  placeholder="Username"></td>
 </tr>
 <tr>
-<td><h7>PASSWORD</h7></th><td><input type="text" name="pass" class="form_input2" required placeholder="Password"></td>
+<td><h7>PASSWORD</h7></th><td><input type="password" name="pass" class="form_input2" required placeholder="Password"></td>
 </tr>
 <tr>
-<td><h7>NO TELEPON</h7></th><td><input type="text" name="tlp" class="form_input2" required  placeholder="+62..."></td>
+<td><h7>NO TELEPON</h7></th><td><input type="text" name="tlp" class="form_input2" required  placeholder="+62..." maxlength="12" onkeypress="return hanyaAngka(event)"></td>
 </tr>
 <tr>
 <td><h7>LEVEL</h7></th><td><input type="text" name="level" class="form_input2" required  placeholder="Level"></td>
@@ -160,6 +160,14 @@ if (isset($_POST['simpan'])){
 </tr>
 
 <form>
+<script>
+        function hanyaAngka(event) {
+            var angka = (event.which) ? event.which : event.keyCode
+            if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+                return false;
+            return true;
+        }
+</script>
 </table>
     </div>
     <!--/ project  -->

@@ -113,22 +113,22 @@ if (!isset ($_SESSION['nama'])) {
                         <h7>Tanggal Pengaduan</h7>
                     </td>
                     <td><input type="text" name="tgl" class="form_input2" required
-                               value="<?php date_default_timezone_set('Asia/Jakarta');
-                               echo date('Y-m-d (H:i:s)') ?>" readonly></td>
+                            value="<?php date_default_timezone_set('Asia/Jakarta');
+                            echo date('Y-m-d (H:i:s)') ?>" readonly></td>
                 </tr>
                 <tr>
                     <td>
                         <h7>Nama</h7>
                     </td>
                     <td><input type="text" name="nama" class="form_input2" required
-                               value="<?php echo $_SESSION['nama'] ?>" readonly></td>
+                            value="<?php echo $_SESSION['nama'] ?>" readonly></td>
                 </tr>
                 <tr>
                     <td>
                         <h7>NIK</h7>
                     </td>
                     <td><input type="text" name="nik" class="form_input2" required
-                               value="<?php echo $_SESSION['nik'] ?>" readonly></td>
+                            value="<?php echo $_SESSION['nik'] ?>" readonly></td>
                 </tr>
                 <tr>
                     <td>
@@ -141,7 +141,7 @@ if (!isset ($_SESSION['nama'])) {
                         <h7>No.Telp</h7>
                         </th>
                         <input type="text" name="tlp" required class="form_input2"
-                               value="<?php echo $_SESSION['tlp'] ?>" readonly></td>
+                            value="<?php echo $_SESSION['tlp'] ?>" readonly></td>
                 </tr>
                 <tr>
                     <td>
