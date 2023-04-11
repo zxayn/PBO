@@ -6,6 +6,9 @@ $p = mysqli_query ($conn, "SELECT * FROM tanggapan WHERE isi_laporan = '$idd'");
 $data = mysqli_fetch_array ($p);
 if(!isset ($_SESSION['nama_petugas'])){
 	header ("location: index.php");
+}elseif ($data==0) {
+    header ("location: login/tanggapankosong.php");
+    
 	}else{
 ?>
 <!doctype html>
@@ -135,6 +138,7 @@ if ($level == 'petugas') {
 <center><a class="btn btn-dark" href="data_pengaduan.php" style="width:30%;">Kembali</a></p></center>
 </div>
 </form>
+
 
 </div>
     <!--/ project  -->

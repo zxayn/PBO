@@ -177,6 +177,7 @@ while ($data = mysqli_fetch_array ($query)){
 <input type="hidden" name="foto" class="form_input2" value="<?php echo $data['foto']?>">
 <input type="hidden" name="status" class="form_input2" value="Selesai">
 <td>
+
 <button type="submit" class="btn btn-success" name="simpan"><i class="bi bi-check2"></i></button>
 <a onClick="return confirm('Yakin Ingin Menghapus?')" class="btn btn-danger" href="hapus_data.php?idd=<?php echo $data['id_pengaduan'] ?>" role="button"><i class="bi bi-trash3"></i></a>
 <div class="dropdown">
@@ -185,8 +186,9 @@ while ($data = mysqli_fetch_array ($query)){
 		<a class="dropdown-item" href="tanggapan_adm.php?id=<?php echo $data['id_pengaduan'] ?>">Tanggapi</a>
         <a class="dropdown-item" href="tanggapan_adm_cek.php?id=<?php echo $data['isi_laporan'] ?>">Lihat Tanggapan</a>
 	</div>
+
 </div>
-</form></td>
+</form>
 </tr>
 <?php }}else{
 	echo '<tr><td colspan="8" align="center">TIDAK ADA DATA!!!</td></tr>';
