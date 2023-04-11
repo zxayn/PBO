@@ -6,6 +6,9 @@ $p = mysqli_query ($conn, "SELECT * FROM tanggapan WHERE isi_laporan = '$idd'");
 $data = mysqli_fetch_array ($p);
 if(!isset ($_SESSION['nama_petugas'])){
 	header ("location: index.php");
+}elseif ($data==0) {
+    header ("location: login/tanggapankosong.php");
+    
 	}else{
 ?>
 <!doctype html>
@@ -76,14 +79,14 @@ $level = $_SESSION ['level'] == 'petugas';
 if ($level == 'petugas') {
 ?> 
 									
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
-                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                            <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                            <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan_petugas.php">Pengaduan</a></li></i>
+                            <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
                                     <?php }else{ ?>
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
-                                    <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
-                                    <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
+                            <i class="fa fa-home" style="color:white"><li><a class="active" href="admin_petugas.php">Home</a></li></i>
+                            <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="data_pengaduan.php">Pengaduan</a></li></i>
+                            <i class="fa fa-file-archive-o" style="color:white"><li><a class="active" href="data_masarakat.php">Data Masyarakat</a></li></i>
+                            <li><i class="fa fa-user" style="color:white"> <a href="#">Kelola User<i class="ti-angle-down"></i></a></i>
                                                 <ul class="submenu">
                                                     <li><a href="user_masarakat.php">Masyarakat</a></li>
                                                     <li><a href="user_admin.php">Admin Petugas</a></li>
@@ -130,7 +133,7 @@ if ($level == 'petugas') {
 
 <center><h4 style="margin-top:20px">Ditanggapi Tanggal: <?= $data ['tgl_tanggapan']?></h4></center>
 <div style="font-style:normal; font-family:Verdana, Geneva, sans-serif">
-<b><textarea rows="7px" style="width:100%;"><?= $data ['tanggapan']?></textarea></b>
+<b><textarea rows="7px" style="width:100%;" readonly><?= $data ['tanggapan']?></textarea></b>
 </div>
 <div>
 <center><a class="btn btn-dark" href="data_pengaduan_petugas.php" style="width:30%;">Kembali</a></p></center>
