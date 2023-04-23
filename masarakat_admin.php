@@ -11,12 +11,12 @@ if (!isset ($_SESSION['nama'])) {
         <title><?php echo $_SESSION['nama'] ?></title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-        <link rel="stylesheet" href="assetss/css/main.css"/>
+        <link rel="stylesheet" href="assets/assetss/css/main.css"/>
         <noscript>
-            <link rel="stylesheet" href="assetss/css/noscript.css"/>
+            <link rel="stylesheet" href="assets/assetss/css/noscript.css"/>
         </noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link rel="icon" type="image/x-icon" href="../icon.ico"/>
+        <link rel="icon" type="image/x-icon" href="icon.ico"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
                 integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
                 crossorigin="anonymous">
@@ -31,8 +31,8 @@ if (!isset ($_SESSION['nama'])) {
         <nav id="nav">
             <a href="#" class="icon solid fa-home"><span>Home</span></a>
             <a href="#pengaduan" class="icon solid fa-envelope"><span>Pengaduan</span></a>
-            <a href="pengaduan1.php"><i class="bi bi-bar-chart-line"></i><span>Hasil</span></a>
-            <a href="../index.php" onclick="return confirm('Yakin Ingin Logout?')" value="Logout"/><i
+            <a href="pengaduan1_masyarakat.php"><i class="bi bi-bar-chart-line"></i><span>Hasil</span></a>
+            <a href="index.php" onclick="return confirm('Yakin Ingin Logout?')" value="Logout"/><i
                 class="bi bi-box-arrow-in-right"></i><span>Logout</span></a>
         </nav>
 
@@ -47,7 +47,7 @@ if (!isset ($_SESSION['nama'])) {
                 </header>
                 <a href="#pengaduan" class="jumplink pic">
                     <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-                    <img src="imagess/me.jpg" alt=""/>
+                    <img src="images/me.jpg" alt=""/>
                 </a>
             </article>
 
@@ -56,7 +56,7 @@ if (!isset ($_SESSION['nama'])) {
                 <header>
                     <h2>Pengaduan</h2>
                 </header>
-                <form action="upload_file.php" method="post" enctype="multipart/form-data">
+                <form action="upload_file_masyarakat.php" method="post" enctype="multipart/form-data">
                     <div>
                         <div class="row">
                             <div class="col-8 col-12-medium">
@@ -99,11 +99,11 @@ if (!isset ($_SESSION['nama'])) {
     </div>
 
     <!-- Scripts -->
-    <script src="assetss/js/jquery.min.js"></script>
-    <script src="assetss/js/browser.min.js"></script>
-    <script src="assetss/js/breakpoints.min.js"></script>
-    <script src="assetss/js/util.js"></script>
-    <script src="assetss/js/main.js"></script>
+    <script src="assets/assetss/js/jquery.min.js"></script>
+    <script src="assets/assetss/js/browser.min.js"></script>
+    <script src="assets/assetss/js/breakpoints.min.js"></script>
+    <script src="assets/assetss/js/util.js"></script>
+    <script src="assets/assetss/js/main.js"></script>
     \
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"

@@ -1,8 +1,8 @@
 <?php
 session_start();
 include 'koneksi.php';
-if(!isset ($_SESSION['nama'])){
-	header ("location: index.php");
+if(!isset ($_SESSION['nama_petugas'])){
+    header ("location: index.php");
 	}else{
 ?>
 <!doctype html>
@@ -17,15 +17,15 @@ if(!isset ($_SESSION['nama'])){
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
-    <link rel="icon" type="image/x-icon" href="../icon.ico" />
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Login/css/style.css">
+    <link rel="stylesheet" href="css/css_masyarakat/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/magnific-popup.css">
+    <link rel="stylesheet" href="css/css_masyarakat/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -89,7 +89,7 @@ if(!isset ($_SESSION['nama'])){
 <form method="post">
 <center><h4 style="margin-top:20px">Tidak Ada Laporan!!</h4></center>
 <div>
-<center><a class="btn btn-dark" href="../data_pengaduan.php" style="width:30%;">Kembali</a></p></center>
+<center><a class="btn btn-dark" href="data_pengaduan.php" style="width:30%;">Kembali</a></p></center>
 </div>
 </form>
 

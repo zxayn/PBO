@@ -137,25 +137,24 @@ if (isset($_POST['simpan'])){
 <td><input type="hidden" name="id"></td>
 </tr>
 <tr>
-<td><h7>NAMA</h7></td><td><input type="text" name="nama" class="form_input2" required  placeholder="Nama"></td>
+<td><h7>Nama</h7></td><td><input type="text" name="nama" class="form_input2" required  placeholder="Nama"></td>
 </tr>
 <tr>
-<td><h7>USERNAME</h7></th><td><input type="text" name="user" class="form_input2" required  placeholder="Username"></td>
+<td><h7>Username</h7></th><td><input type="text" name="user" class="form_input2" required  placeholder="Username"></td>
 </tr>
 <tr>
-<td><h7>PASSWORD</h7></th><td><input type="password" name="pass" class="form_input2" required placeholder="Password"></td>
+<td><h7>Password</h7></th><td><input type="password" name="pass" class="form_input2" required placeholder="Password"></td>
 </tr>
 <tr>
-<td><h7>NO TELEPON</h7></th><td><input type="text" name="tlp" class="form_input2" required  placeholder="+62..." maxlength="12" onkeypress="return hanyaAngka(event)"></td>
+<td><h7>No.Telp</h7></th><td><input type="text" name="tlp" class="form_input2" required  placeholder="No.Telp" maxlength="12" onkeypress="return hanyaAngka(event)"></td>
 </tr>
 <tr>
-<td><h7>LEVEL</h7></th><td><input type="text" name="level" class="form_input2" required  placeholder="Level"></td>
+<td><h7>Level</h7></th><td><input type="text" name="level" class="form_input2" required  placeholder="Level"></td>
 </tr>
 <tr>
 <td colspan="2"><button type="submit" class="btn btn-success" name="simpan" style="float:left; margin-right:25px;">Tambah</button>
                 <button type="reset" class="btn btn-danger" style="float:left; margin-right:25px;"><i class="fa fa-remove"></i>Reset</button>
                 <a class="btn btn-dark" href="user_admin.php" role="button" style="float:right">Kembali <i class="fa fa-sign-out" style="color:white"></i></a>
-
 </td>
 </tr>
 

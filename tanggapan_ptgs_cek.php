@@ -7,7 +7,7 @@ $data = mysqli_fetch_array ($p);
 if(!isset ($_SESSION['nama_petugas'])){
 	header ("location: index.php");
 }elseif ($data==0) {
-    header ("location: login/tanggapankosong.php");
+    header ("location: tanggapan_kosong_ptgs.php");
     
 	}else{
 ?>

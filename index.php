@@ -30,7 +30,7 @@
 											<li><a href="#">Home</a></li>
 											<li><a href="loginadmin.php">Login Admin/Petugas</a></li>
 											<li><a href="registrasi.php">Registrasi</a></li>
-											<li><a href="Login/index.php">Login</a></li>
+											<li><a href="login_masyarakat.php">Login</a></li>
 										</ul>
 									</div>
 								</li>
@@ -45,7 +45,7 @@
 							<p>Selamat datang di web<br /> Pengaduan Masyarakat Desa Dermo<br />
 							Silahkan Registrasi <br />dan Login dengan akun anda.</p>
 							<ul class="actions special">
-								<li><a href="Login/index.php" class="button primary">Login</a></li>
+								<li><a href="login_masyarakat.php" class="button primary">Login</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -130,7 +130,7 @@
 								<p>Segera Laporkan ke Web Pengaduan Masyarakat</p>
 							</header>
 							<ul class="actions stacked">
-								<li><a href="Login/index.php" class="button fit">Login</a></li>
+								<li><a href="login_masyarakat.php" class="button fit">Login</a></li>
 								<li><a href="https://wa.me/+6285608064055" class="button fit">WhatsApps</a></li>
 							</ul>
 						</div>

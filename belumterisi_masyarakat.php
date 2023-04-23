@@ -1,14 +1,8 @@
 <?php
 session_start();
 include 'koneksi.php';
-$idd = $_GET ['id'];
-$p = mysqli_query ($conn, "SELECT * FROM tanggapan WHERE isi_laporan = '$idd'");
-$data = mysqli_fetch_array ($p);
 if(!isset ($_SESSION['nama'])){
 	header ("location: index.php");
-}elseif ($data==0) {
-    header ("location: belumterisi.php");
-    
 	}else{
 ?>
 <!doctype html>
@@ -23,15 +17,15 @@ if(!isset ($_SESSION['nama'])){
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
-    <link rel="icon" type="image/x-icon" href="../icon.ico" />
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Login/css/style.css">
+    <link rel="stylesheet" href="css/css_masyarakat/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/magnific-popup.css">
+    <link rel="stylesheet" href="css/css_masyarakat/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -63,7 +57,10 @@ if(!isset ($_SESSION['nama'])){
                                     </a>
                                 </div>
                             </div>
-                            <!-- Kosong -->
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                </div>
+                            </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
@@ -92,14 +89,11 @@ if(!isset ($_SESSION['nama'])){
 
 
     <div class="project_area">
-    <p class="tulisan_input2">Tanggapan Laporan Masyarakat</p>
+    <p class="tulisan_input2">Tanggapan Laporan</p>
 <form method="post">
-<center><h4 style="margin-top:20px">Ditanggapi Tanggal <?php echo $data['tgl_tanggapan'] ?></h4></center>
-<div style="font-style:normal; font-family:Verdana, Geneva, sans-serif">
-<textarea rows="7px" style="width:100%;"><?php echo $data['tanggapan'] ?></textarea>
-</div>
+<center><h4 style="margin-top:20px">Tidak Ada Laporan!!</h4></center>
 <div>
-<center><a class="btn btn-dark" href="pengaduan1.php" style="width:30%;">Kembali</a></p></center>
+<center><a class="btn btn-dark" href="pengaduan1_masyarakat.php" style="width:30%;">Kembali</a></p></center>
 </div>
 </form>
 
@@ -112,32 +106,32 @@ if(!isset ($_SESSION['nama'])){
     <!-- form itself end -->
 
     <!-- JS here -->
-    <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="../js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/isotope.pkgd.min.js"></script>
-    <script src="../js/ajax-form.js"></script>
-    <script src="../js/waypoints.min.js"></script>
-    <script src="../js/jquery.counterup.min.js"></script>
-    <script src="../js/imagesloaded.pkgd.min.js"></script>
-    <script src="../js/scrollIt.js"></script>
-    <script src="../js/jquery.scrollUp.min.js"></script>
-    <script src="../js/wow.min.js"></script>
-    <script src="../js/nice-select.min.js"></script>
-    <script src="../js/jquery.slicknav.min.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/gijgo.min.js"></script>
-    <script src="../js/slick.min.js"></script>
+    <script src="js/js_masyarakat/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/js_masyarakat/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/js_masyarakat/popper.min.js"></script>
+    <script src="js/js_masyarakat/bootstrap.min.js"></script>
+    <script src="js/js_masyarakat/owl.carousel.min.js"></script>
+    <script src="js/js_masyarakat/isotope.pkgd.min.js"></script>
+    <script src="js/js_masyarakat/ajax-form.js"></script>
+    <script src="js/js_masyarakat/waypoints.min.js"></script>
+    <script src="js/js_masyarakat/jquery.counterup.min.js"></script>
+    <script src="js/js_masyarakat/imagesloaded.pkgd.min.js"></script>
+    <script src="js/js_masyarakat/scrollIt.js"></script>
+    <script src="js/js_masyarakat/jquery.scrollUp.min.js"></script>
+    <script src="js/js_masyarakat/wow.min.js"></script>
+    <script src="js/js_masyarakat/nice-select.min.js"></script>
+    <script src="js/js_masyarakat/jquery.slicknav.min.js"></script>
+    <script src="js/js_masyarakat/jquery.magnific-popup.min.js"></script>
+    <script src="js/js_masyarakat/plugins.js"></script>
+    <script src="js/js_masyarakat/gijgo.min.js"></script>
+    <script src="js/js_masyarakat/slick.min.js"></script>
     <!--contact js-->
-    <script src="../js/contact.js"></script>
-    <script src="../js/jquery.ajaxchimp.min.js"></script>
-    <script src="../js/jquery.form.js"></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/mail-script.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/js_masyarakat/contact.js"></script>
+    <script src="js/js_masyarakat/jquery.ajaxchimp.min.js"></script>
+    <script src="js/js_masyarakat/jquery.form.js"></script>
+    <script src="js/js_masyarakat/jquery.validate.min.js"></script>
+    <script src="js/js_masyarakat/mail-script.js"></script>
+    <script src="js/js_masyarakat/main.js"></script>
 </body>
 
 </html>

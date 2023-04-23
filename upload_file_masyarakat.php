@@ -34,7 +34,7 @@ if (isset($_POST['simpan'])) {
             ");
 
             if ($query) {
-                echo "<script>alert('Pengaduan berhasil terkirim.'); window.location.href='pengaduan1.php';</script>";
+                echo "<script>alert('Pengaduan berhasil terkirim.'); window.location.href='pengaduan1_masyarakat.php';</script>";
             } else {
                 echo "<script>alert('Gagal Mengunggah Gambar. Silahkan coba lagi.'); window.location.href='masarakat_admin.php#pengaduan';</script>";
             }

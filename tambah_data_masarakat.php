@@ -11,12 +11,13 @@ if(!isset ($_SESSION['nama_petugas'])){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Confirm Data Masyarakat</title>
+    <title>Tambah Data Masyarakat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -144,7 +145,7 @@ if (isset($_POST['simpan'])){
 <td><h7>Nama</h7></td><td><input type="text" name="nama" class="form_input2" required  placeholder="Nama"></td>
 </tr>
 <tr>
-<td><h7>Nik</h7></th><td><input type="text" name="nik" class="form_input2" required  placeholder="NIK 16 Digit" minlength="16" maxlength="16" onkeypress="return hanyaAngka(event)"></td>
+<td><h7>NIK</h7></th><td><input type="text" name="nik" class="form_input2" required  placeholder="NIK 16 Digit" minlength="16" maxlength="16" onkeypress="return hanyaAngka(event)"></td>
 </tr>
 <tr>
 <td><h7>Alamat</h7></th><td><input type="text" name="alamat" class="form_input2" required placeholder="Alamat"></td>

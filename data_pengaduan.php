@@ -27,7 +27,7 @@ if(!isset ($_SESSION['nama_petugas'])){
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="Login/css/style.css">
+    <link rel="stylesheet" href="css/css_masyarakat/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -165,7 +165,7 @@ while ($data = mysqli_fetch_array ($query)){
 <td><?php echo $data['nama_pengadu'] ?></td>
 <td><?php echo $data['nik'] ?></td>
 <td><?php echo $data['isi_laporan'] ?></td>
-<td><a href="http://localhost/desa_ukk_smk/Login/gambar_pengaduan/<?php echo $data['foto'];?>"><img src="image/<?php echo $data['foto'];?>" height="55px"></a></td>
+<td><a href="http://localhost/desa_ukk_smk/gambar_pengaduan/<?php echo $data['foto'];?>"><img src="image/<?php echo $data['foto'];?>" height="55px"></a></td>
 <td><?php echo $data['status'] ?></td>
 <form method="post" action="edit_selesai.php?id=<?php echo $data['id_pengaduan'] ?>">
 <input type="hidden" name="id" class="form_input2" value="<?php echo $data['id_pengaduan']?>">

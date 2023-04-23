@@ -1,8 +1,14 @@
 <?php
 session_start();
 include 'koneksi.php';
+$idd = $_GET ['id'];
+$p = mysqli_query ($conn, "SELECT * FROM tanggapan WHERE isi_laporan = '$idd'");
+$data = mysqli_fetch_array ($p);
 if(!isset ($_SESSION['nama'])){
 	header ("location: index.php");
+}elseif ($data==0) {
+    header ("location: belumterisi_masyarakat.php");
+    
 	}else{
 ?>
 <!doctype html>
@@ -16,16 +22,16 @@ if(!isset ($_SESSION['nama'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
-    <link rel="icon" type="image/x-icon" href="../icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Login/css/style.css">
+    <link rel="stylesheet" href="css/css_masyarakat/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/magnific-popup.css">
+    <link rel="stylesheet" href="css/css_masyarakat/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css_masyarakat/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -57,15 +63,7 @@ if(!isset ($_SESSION['nama'])){
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-7">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                    <i class="fa fa-home" style="color:white"><li><a class="active" href="masarakat_admin.php">Home</a></li></i>
-                                    <i class="fa fa-bar-chart" style="color:white"><li><a class="active" href="pengaduan1.php">Pengaduan Saya</a></li></i>
-                                    </nav>
-                                </div>
-                            </div>
+                            <!-- Kosong -->
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="search_button">
@@ -94,11 +92,14 @@ if(!isset ($_SESSION['nama'])){
 
 
     <div class="project_area">
-    <p class="tulisan_input2">Tanggapan Laporan</p>
+    <p class="tulisan_input2">Tanggapan Laporan Masyarakat</p>
 <form method="post">
-<center><h4 style="margin-top:20px">Tidak Ada Laporan!!</h4></center>
+<center><h4 style="margin-top:20px">Ditanggapi Tanggal <?php echo $data['tgl_tanggapan'] ?></h4></center>
+<div style="font-style:normal; font-family:Verdana, Geneva, sans-serif">
+<textarea rows="7px" style="width:100%;"><?php echo $data['tanggapan'] ?></textarea>
+</div>
 <div>
-<center><a class="btn btn-dark" href="pengaduan1.php" style="width:30%;">Kembali</a></p></center>
+<center><a class="btn btn-dark" href="pengaduan1_masyarakat.php" style="width:30%;">Kembali</a></p></center>
 </div>
 </form>
 
